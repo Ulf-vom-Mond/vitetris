@@ -95,10 +95,14 @@ static void levelup(struct player *p)
 		p->falltime = 100;
 	else if (p->level == 10)
 		p->falltime = 83;
-	else if (p->level < 20)
-		p->falltime -= 5 + p->level%2;
-	else if (p->level < 30)
-		p->falltime -= 2;
+	else if (p->level == 13)
+		p->falltime = 67;
+	else if (p->level == 16)
+		p->falltime = 50;
+	else if (p->level == 19)
+		p->falltime = 33;
+	else if (p->level == 29)
+		p->falltime = 17;
 }
 
 static void upd_score_level(struct player *p, int n)

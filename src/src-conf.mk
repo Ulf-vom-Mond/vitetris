@@ -1,10 +1,11 @@
+CC = cc
 CCFLAGS = $(CFLAGS) $(CPPFLAGS)
 #CFLAGS = -O2 -Wall -pedantic -Wno-parentheses
 CFLAGS = -O2
 DTWOPLAYER = -DTWOPLAYER=1
 tetris2p_obj = tetris2p.o
-#DJOYSTICK = -DJOYSTICK=1
-#joylinux_obj = joylinux.o
+DJOYSTICK = -DJOYSTICK=1
+joylinux_obj = joylinux.o
 select_obj = select.o
 #BACKEND = curses
 #DCURSES = -DCURSES=1
@@ -20,5 +21,8 @@ netw_lib = netw.a
 DSOCKET = -DSOCKET=1
 DINET = -DINET=1
 inet_obj = inet.o
-DTTY_SOCKET = -DTTY_SOCKET=1
-tty_socket_obj = tty_socket.o
+#DTTY_SOCKET = -DTTY_SOCKET=1
+#tty_socket_obj = tty_socket.o
+#DHISCORE_FILENAME = -D'HISCORE_FILENAME=""'
+#DPCTIMER = -DPCTIMER=1
+#pctimer_obj = pctimer.o

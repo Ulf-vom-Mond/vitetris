@@ -35,7 +35,7 @@
 			/* | ## |#   | */
 
 #define SPAWN_DELAY 166
-#define LOCK_DELAY 166
+#define LOCK_DELAY 0
 #define CLEAR_DELAY 332
 
 struct tetr {
